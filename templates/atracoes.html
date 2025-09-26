@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atrações Turísticas</title>
+  
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  
+  <link rel="icon" href="{% static 'assets/icon.png' %}">
+</head>
+<body>
+  <header>
+    <h1>Atrações Turísticas</h1>
+    <p>Natureza, trilhas e panoramas</p>
+    <nav>
+      <ul>
+        <li><a href="{% url 'home' %}">Início</a></li>
+        <li><a href="{% url 'historia' %}">História</a></li>
+        <li><a href="{% url 'atracoes' %}" aria-current="page">Atrações</a></li>
+        <li><a href="{% url 'galeria' %}">Galeria</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>O que visitar</h2>
+    <p class="intro">
+      As atrações locais privilegiam o contato com a natureza: morros com mirantes para ver
+      a paisagem, cachoeiras rodeadas por mata nativa e estradas rurais que mostram o
+      estilo de vida do interior. São opções para quem busca trilhas, fotografia, piqueniques
+      e descanso em meio ao verde. Cada local tem infraestrutura simples — ideal para turismo
+      de baixo impacto e dias tranquilos em família.
+    </p>
+
+    <section class="gallery" aria-label="Atrações turísticas">
+      <figure class="gallery-item">
+        <img src="{% static 'assets/morroGurita.jpg' %}"
+             alt="Morro da Gurita com trilha e vegetação nativa, vista próxima do mirante">
+        <figcaption>
+          <h3>Morro da Gurita</h3>
+          <p>Ponto alto para caminhada e vistas panorâmicas da região.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'assets/morroGuritaVistalLonge.jpg' %}"
+             alt="Panorama distante do Morro da Gurita em meio a vales e encostas verdes">
+        <figcaption>
+          <h3>Morro da Gurita - Vista de Longe</h3>
+          <p>Ótimo para fotos e contemplação da paisagem natural.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'assets/cascaFernandes.jpg' %}"
+             alt="Queda d'água da Cascata Fernandes com pedra e mata ao redor">
+        <figcaption>
+          <h3>Cascata Fernandes</h3>
+          <p>Cachoeira recomendada para quem gosta de trilhas e contato direto com a água.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'assets/cascaFernandesMulher.jpg' %}"
+             alt="Visitante caminhando na trilha próxima à Cascata Fernandes">
+        <figcaption>
+          <h3>Cascata Fernandes - Trilha</h3>
+          <p>Trilha que aproxima o visitante da queda d'água e da vegetação nativa.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'assets/rural.jpg' %}"
+             alt="Cenário rural com campos e casas típicas, estrada de terra e morros ao fundo">
+        <figcaption>
+          <h3>Área Rural</h3>
+          <p>Passeios tranquilos entre paisagens rurais e contato com a cultura local.</p>
+        </figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito por Nicoly.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Galeria Completa</title>
+
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="icon" href="{% static 'assets/icon.png' %}">
+</head>
+<body>
+  <header>
+    <h1>Galeria de Fotos</h1>
+    <p>Todos os registros visuais da cidade</p>
+    <nav>
+      <ul>
+        <li><a href="{% url 'home' %}">Início</a></li>
+        <li><a href="{% url 'historia' %}">História</a></li>
+        <li><a href="{% url 'atracoes' %}">Atrações</a></li>
+        <li><a href="{% url 'galeria' %}" aria-current="page">Galeria</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Visão Geral</h2>
+    <section class="gallery" aria-label="Imagens de visão geral">
+      <figure class="gallery-item">
+        <img src="{% static 'assets/entradaCidade.jpeg' %}"
+             alt="Pórtico de entrada da cidade de São João Batista com placas de boas-vindas e vegetação ao redor.">
+        <figcaption>
+          <h3>Entrada da Cidade</h3>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'assets/rioTijucas.jpeg' %}"
+             alt="Trecho do Rio Tijucas com margem arborizada e reflexos do céu na água.">
+        <figcaption>
+          <h3>Rio Tijucas</h3>
+        </figcaption>
+      </figure>
+    </section>
+
+    <h2>História</h2>
+    <section class="gallery" aria-label="Imagens históricas">
+      <figure class="gallery-item">
+        <img src="{% static 'assets/igreja.jpg' %}"
+             alt="Fachada da Igreja Matriz de São João Batista com torre e portada principal.">
+        <figcaption>
+          <h3>Igreja Matriz</h3>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'assets/igrejaDentro.jpg' %}"
+             alt="Interior da Igreja Matriz com altar e vitrais iluminados.">
+        <figcaption>
+          <h3>Interior da Igreja</h3>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'assets/igrejacolonia.jpeg' %}"
+             alt="Igreja da colônia construída pelos primeiros colonos em área rural.">
+        <figcaption>
+          <h3>Igreja da Colônia</h3>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'assets/comunidadeBethania.jpg' %}"
+             alt="Fachada da Comunidade Bethânia com espaço para encontros e atividades.">
+        <figcaption>
+          <h3>Comunidade Bethânia</h3>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'assets/comunidadeBethaniaLago.jpg' %}"
+             alt="Pequeno lago dentro da Comunidade Bethânia cercado por árvores.">
+        <figcaption>
+          <h3>Lago da Comunidade Bethânia</h3>
+        </figcaption>
+      </figure>
+    </section>
+
+    <h2>Atrações</h2>
+    <section class="gallery" aria-label="Atrações turísticas">
+      <figure class="gallery-item">
+        <img src="{% static 'assets/morroGurita.jpg' %}"
+             alt="Morro da Gurita com trilha em meio à vegetação nativa, próximo ao mirante.">
+        <figcaption>
+          <h3>Morro da Gurita</h3>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'assets/morroGuritaVistalLonge.jpg' %}"
+             alt="Vista panorâmica do Morro da Gurita em meio a vales e colinas verdes.">
+        <figcaption>
+          <h3>Vista do Morro da Gurita</h3>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'assets/cascaFernandes.jpg' %}"
+             alt="Queda d'água da Cascata Fernandes em meio a pedras e vegetação.">
+        <figcaption>
+          <h3>Cascata Fernandes</h3>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'assets/cascaFernandesMulher.jpg' %}"
+             alt="Visitante caminhando em trilha próxima à Cascata Fernandes.">
+        <figcaption>
+          <h3>Trilha da Cascata Fernandes</h3>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'assets/rural.jpg' %}"
+             alt="Paisagem rural com estrada de terra, casas simples e morros ao fundo.">
+        <figcaption>
+          <h3>Área Rural</h3>
+        </figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito por Nicoly.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>São João Batista - Visão Geral</title>
+  
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  
+  <link rel="icon" href="{% static 'assets/icon.png' %}">
+</head>
+<body>
+  <header>
+    <h1>São João Batista — Bem-vindo</h1>
+    <p>Portal turístico da cidade</p>
+    <nav>
+      <ul>
+        <li><a href="{% url 'home' %}" aria-current="page">Início</a></li>
+        <li><a href="{% url 'historia' %}">História</a></li>
+        <li><a href="{% url 'atracoes' %}">Atrações</a></li>
+        <li><a href="{% url 'galeria' %}">Galeria</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Visão Geral</h2>
+    <p class="intro">
+      Bem-vindo ao portal: aqui você encontra informações sobre os pontos históricos,
+      as atrações naturais e uma galeria com imagens que mostram a beleza da cidade.
+      Use o menu para navegar entre História, Atrações e Galeria.
+    </p>
+
+    <section class="gallery" aria-label="Galeria de visão geral">
+      <figure class="gallery-item">
+        <img src="{% static 'assets/entradaCidade.jpeg' %}" alt="Pórtico de entrada da cidade com placas e vegetação ao redor">
+        <figcaption>
+          <h3>Entrada da Cidade</h3>
+          <p>O pórtico de entrada que recebe visitantes e convidados.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'assets/rioTijucas.jpeg' %}" alt="Trecho do Rio Tijucas com margem arborizada e superfície refletindo o céu">
+        <figcaption>
+          <h3>Rio Tijucas</h3>
+          <p>Rio que atravessa a cidade e compõe sua paisagem natural.</p>
+        </figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito por Nicoly</p>
+  </footer>
+</body>
+</html>

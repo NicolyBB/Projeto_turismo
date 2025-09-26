@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>História de São João Batista</title>
+  
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="icon" href="{% static 'assets/icon.png' %}">
+</head>
+<body>
+  <header>
+    <h1>História de São João Batista</h1>
+    <p>Memória, fé e tradições</p>
+    <nav>
+      <ul>
+        <li><a href="{% url 'home' %}">Início</a></li>
+        <li><a href="{% url 'historia' %}" aria-current="page">História</a></li>
+        <li><a href="{% url 'atracoes' %}">Atrações</a></li>
+        <li><a href="{% url 'galeria' %}">Galeria</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Breve histórico</h2>
+    <p class="intro">
+      A história da cidade começou com a ocupação de imigrantes que chegaram atraídos por
+      terras férteis e abundância de água. Ao longo do século XIX e XX, a comunidade cresceu
+      em torno de pequenas propriedades rurais, comércio local e das atividades religiosas.
+      As igrejas locais desempenharam papel central na vida social — não apenas como espaços
+      de fé, mas como centro de festas, encontros e preservação cultural. Com o tempo, a cidade
+      equilibraria a tradição com um crescimento gradual, preservando marcos históricos e
+      festas populares que reúnem moradores e visitantes.
+    </p>
+
+    <section class="gallery" aria-label="Imagens históricas">
+      <figure class="gallery-item">
+        <img src="{% static 'assets/igreja.jpg' %}"
+             alt="Fachada da Igreja Matriz de São João Batista, com torre e portada principal em estilo tradicional">
+        <figcaption>
+          <h3>Igreja Matriz</h3>
+          <p>Marco religioso e arquitetônico: ponto de encontro da comunidade por gerações.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'assets/igrejaDentro.jpg' %}"
+             alt="Interior da Igreja Matriz mostrando altar, bancos de madeira e vitrais">
+        <figcaption>
+          <h3>Interior da Igreja</h3>
+          <p>Espaço de celebrações e memória coletiva, com detalhes preservados.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'assets/igrejacolonia.jpeg' %}"
+             alt="Igreja da colônia em área rural, construída pelos primeiros colonos">
+        <figcaption>
+          <h3>Igreja da Colônia</h3>
+          <p>Simboliza a fé trazida pelos colonizadores e a simplicidade da arquitetura rural.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'assets/comunidadeBethania.jpg' %}"
+             alt="Fachada da Comunidade Bethânia com área de convivência">
+        <figcaption>
+          <h3>Comunidade Bethânia</h3>
+          <p>Centro comunitário que reúne eventos, encontros e tradições locais.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="{% static 'assets/comunidadeBethaniaLago.jpg' %}"
+             alt="Pequeno lago dentro da área da Comunidade Bethânia com árvores ao redor">
+        <figcaption>
+          <h3>Comunidade Bethânia - Lago</h3>
+          <p>Local de tranquilidade associado a eventos religiosos e momentos de contemplação.</p>
+        </figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito por Nicoly.</p>
+  </footer>
+</body>
+</html>
