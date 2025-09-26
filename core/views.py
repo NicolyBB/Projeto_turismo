@@ -1,4 +1,14 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
+# A função render() busca e processa o seu arquivo de template
 def home(request):
-    return HttpResponse("<h1>Olá, Mundo! Esta é a página principal da app Core<h1>")
+    return render(request, 'index.html')
+
+def historia(request):
+    return render(request, 'historia.html')
+
+def atracoes(request):
+    return render(request, 'atracoes.html')
+
+def galeria(request):
+    return render(request, 'galeria.html')
